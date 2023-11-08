@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link id="stylesheet" rel="stylesheet" href="theme2.css" />
+
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="cardContainer">
+        <div class="header">
+          <h1>calc</h1>
+          <div class="theme">
+            <p>THEME</p>
+            <div class="selector">
+              1 2 3
+              <div class="interface">
+                <p class="toggle">.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result" id="result"></div>
+        <div class="buttons">
+          <div class="line one">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="del">DEL</button>
+          </div>
+          <div class="line two">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">+</button>
+          </div>
+          <div class="line three">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+          </div>
+          <div class="line four">
+            <button class="btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn">/</button>
+            <button class="btn multiply">*</button>
+          </div>
+          <div class="line five">
+            <button class="reset">RESET</button>
+            <button class="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

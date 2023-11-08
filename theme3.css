@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Barlow+Semi+Condensed&family=League+Spartan:wght@700&family=Open+Sans&family=Outfit&family=Overpass&family=Raleway:wght@700&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: League Spartan, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(268, 75%, 9%);
+}
+
+.card {
+  width: 35%;
+}
+
+.cardContainer {
+  background-color: hsl(268, 75%, 9%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(268, 75%, 9%);
+  color: white;
+  margin-bottom: 15px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40px;
+}
+
+.toggle {
+  color: hsl(176, 100%, 44%);
+  background-color: hsl(176, 100%, 44%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.interface {
+  display: flex;
+  justify-content: end;
+  background-color: hsl(268, 71%, 12%);
+  border-radius: 15px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.result {
+  height: 80px;
+  background-color: hsl(268, 71%, 12%);
+  border-radius: 15px;
+  font-size: 35px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  background-color: hsl(268, 71%, 12%);
+  height: 450px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  gap: 15px;
+}
+
+button {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  font-size: 30px;
+  border: none;
+  color: yellow;
+  background-color: hsl(268, 47%, 21%);
+  cursor: pointer;
+  box-shadow: 1px 2px 2px hsl(268, 47%, 51%);
+}
+
+button:hover {
+  background-color: hsl(268, 47%, 51%);
+}
+
+.del {
+  background-color: hsl(268, 47%, 35%);
+  color: yellow;
+}
+
+.del:hover {
+  background-color: hsl(225, 21%, 69%);
+}
+.reset {
+  background-color: hsl(268, 47%, 35%);
+  color: yellow;
+}
+
+.reset:hover {
+  background-color: hsl(225, 21%, 69%);
+}
+
+.equal {
+  background-color: hsl(176, 100%, 44%);
+  color: white;
+  box-shadow: 1px 2px 2px hsl(176, 100%, 74%);
+}
+
+.equal:hover {
+  background-color: hsl(176, 100%, 74%);
+}
+
+.multiply {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .card {
+    width: 70%;
+  }
+}

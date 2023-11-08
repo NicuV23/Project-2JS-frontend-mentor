@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Barlow+Semi+Condensed&family=League+Spartan:wght@700&family=Open+Sans&family=Outfit&family=Overpass&family=Raleway:wght@700&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: League Spartan, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 90%);
+}
+
+.card {
+  width: 35%;
+}
+
+.cardContainer {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+  color: black;
+  margin-bottom: 15px;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+}
+
+.selector {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 40px;
+}
+
+.toggle {
+  color: orange;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.interface {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 5%, 81%);
+  border-radius: 15px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.result {
+  height: 80px;
+  background-color: hsl(0, 5%, 86%);
+  border-radius: 15px;
+  font-size: 35px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 15px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  background-color: hsl(0, 5%, 81%);
+  height: 450px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  gap: 15px;
+}
+
+button {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  font-size: 30px;
+  border: none;
+  color: black;
+  background-color: hsl(0, 0%, 85%);
+  cursor: pointer;
+  box-shadow: 1px 2px 2px hsl(0, 0%, 55%);
+}
+
+button:hover {
+  background-color: white;
+}
+
+.del {
+  background-color: hsl(185, 42%, 37%);
+  color: white;
+}
+
+.del:hover {
+  background-color: hsl(225, 21%, 59%);
+}
+.reset {
+  background-color: hsl(185, 42%, 37%);
+  color: white;
+}
+
+.reset:hover {
+  background-color: hsl(225, 21%, 59%);
+}
+
+.equal {
+  background-color: orange;
+  color: white;
+}
+
+.equal:hover {
+  background-color: hsl(31, 100%, 50%);
+}
+
+.multiply {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .card {
+    width: 70%;
+  }
+}
