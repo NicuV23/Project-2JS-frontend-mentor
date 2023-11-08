@@ -5,6 +5,12 @@ const equalButton = document.getElementsByClassName('equal')[0];
 const resetButton = document.getElementsByClassName('reset')[0];
 const changeTheme = document.getElementsByClassName('interface')[0];
 const styleSheet = document.getElementById('stylesheet');
+const minus =document.getElementById('minus')
+const plus =document.getElementById('plus')
+const multiply =document.getElementById('multiply')
+const point =document.getElementById('point')
+const divide =document.getElementById('divide')
+
 
 changeTheme.addEventListener('click', function() {
     if (styleSheet.getAttribute('href') === 'theme2.css') {
@@ -16,11 +22,44 @@ changeTheme.addEventListener('click', function() {
     }
 });
 
+let lastKeyPressed = '';
+
 for (let i = 0; i < keys.length; i++) {
     keys[i].addEventListener('click', function() {
+        if (keys[i].innerText === '-') {
+            if (lastKeyPressed === '-') {
+                return; 
+            }
+        }
+        if (keys[i].innerText === '*') {
+            if (lastKeyPressed === '*') {
+                return; 
+            }
+        }
+        if (keys[i].innerText === '+') {
+            if (lastKeyPressed === '+') {
+                return; 
+            }
+        }
+        if (keys[i].innerText === '/') {
+            if (lastKeyPressed === '/') {
+                return; 
+            }
+        }
+        if (keys[i].innerText === '.') {
+            if (lastKeyPressed === '.') {
+                return; 
+            }
+        }
+        
+        lastKeyPressed = keys[i].innerText;
         result.innerText += keys[i].innerText;
+        if (result.innerText.length > 25) {
+            result.innerText = result.innerText.slice(-25);
+        }
     });
 }
+
 
 resetButton.addEventListener('click', function() {
     result.innerText = '';
